@@ -1,0 +1,94 @@
+.slideshow-container {
+  max-width: 1400px;
+  position: relative;
+  margin: 30px auto;
+}
+
+.slides {
+  display: none;
+}
+
+.slides img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 38.75%;
+  color: black;
+  font-size: 32px;
+  background-color: lightgrey;
+  padding: 14px 9px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: 0.4s ease;
+}
+
+.next {
+  right: 0;
+  margin-right: 20px;
+}
+
+.prev {
+  margin-left: 20px;
+}
+
+.prev:hover, .next:hover {
+  background: #707070;
+  cursor: pointer;
+}
+
+.dots {
+  width: 9px;
+  height: 9px;
+  display: inline-block;
+  background-color: gray;
+  border-radius: 50%;
+  padding: 2px;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+
+.dots-container {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 0s;
+}
+
+@keyframes fade {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+
+
+.active, .dots:hover {
+  background: #333;
+}
+
+@media (max-width:1400px) {
+   .slideshow-container {
+       display:none;
+   }
+}

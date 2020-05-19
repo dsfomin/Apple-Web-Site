@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Apple</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/slider.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="scripts/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="src/data.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>	
+</head>
+<body>
+	<div id="popup-container">
+		<div id="recall-popup">
+			<a href="#" class="close"></a>
+			<h1>ОБРАТНАЯ СВЯЗЬ</h1>
+			<label>Ваше Имя</label>
+			<input type="text" name="name" value="">
+			<label>Телефон</label>
+			<input type="tel" name="tel" value="">
+			<label>Email</label>
+			<input type="Email" name="email" value="">
+			<label>Сообщение</label>
+			<textarea rows="5" id="txt" name="textarea" placeholder="Введите сообщение ..." style="color: black"></textarea>
+			<button>Отправить</button>
+		</div>
+	</div>
+	<header>
+		<div class="container">
+			<div class="top-container">
+				<div class="logo">
+					<img src="images/logo.png" alt="" width="85px">
+				</div>
+				<div id="top-logo-container">
+					<p class="company-name">Apple</p>
+					<p class="company-info">Think Different!</p>
+				</div>
+				<div id="top-phone-container">
+					<nav>
+						<li><a href="tel:+74997777777" id="top-phone">+7(499) 777-77-77</a></li>
+						<li><a href="tel:+74997777777" id="top-phone">+7(499) 777-77-77</a></li>
+						<li><button id="top-recall">Обратная связь</button></li>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="menu">
+		<div class="container">
+			<ul>
+				<li><a href="#" ><span>Главная</span></a></li>
+				<li><a href="#" ><span>Каталог</span></a></li>
+				<li><a href="#" ><span>Доставка и оплата</span></a></li>
+				<li><a href="#" ><span>Прайс-лист</span></a></li>
+				<li><a href="#" ><span>Контакты</span></a></li>
+			</ul>
+		</div>
+	</section>
+	<section onmouseover="stopAuto()" onmouseout="continueAuto()" class="slideshow-container">
+		<div class="slides fade">
+			<div><img src="images/slider/watches.jpg" alt="Watches"></div>
+		</div>
+		<div class="slides fade">
+			<div><img src="images/slider/macbooks.jpg" alt="Macbooks"></div>
+		</div>
+		<div class="slides fade">
+			<div><img src="images/slider/ipad.jpg" alt="Ipad"></div>
+		</div>
+		<div class="slides fade">
+			<div><img src="images/slider/iphone.jpg" alt="Iphone"></div>
+		</div>
+
+		<a class="prev" onclick="plusIndex(-1)">&#10094;</a>
+		<a class="next" onclick="plusIndex(+1)">&#10095;</a>
+
+		<div class="dots-container">
+			<span class="dots" onclick="currentSlide(1)"></span>
+			<span class="dots" onclick="currentSlide(2)"></span>
+			<span class="dots" onclick="currentSlide(3)"></span>
+			<span class="dots" onclick="currentSlide(4)"></span>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<div class="catalog">
+				<nav class="navigation">
+					<ul>
+						<li>
+							<a href="#" class="mac-list" onclick="return false">Mac</a>
+							<ul class="mac-list-show">
+								<li><a href="#" id="macbookair">MacBook Air</a></li>
+								<li><a href="#" id="macbookpro" onclick="return false">MacBook Pro</a></li>
+								<li><a href="#" id="imac" onclick="return false">iMac</a></li>
+								<li><a href="#" id="proxdr" onclick="return false">PRO Display XDR</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="ipad-list" onclick="return false">iPad</a>
+							<ul class="ipad-list-show">
+								<li><a href="#" id="ipadair" onclick="return false">iPad Air</a></li>
+								<li><a href="#" id="ipadpro" onclick="return false">iPad Pro</a></li>
+								<li><a href="#" id="ipadmini" onclick="return false">iPad mini</a></li>
+								<li><a href="#" id="ipad" onclick="return false">iPad</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="iphone-list" onclick="return false">iPhone</a>
+							<ul class="iphone-list-show">
+								<li><a href="#" id="iphone11" onclick="return false">iPhone 11</a></li>
+								<li><a href="#" id="iphone11pro" onclick="return false">iPhone 11 Pro</a></li>
+								<li><a href="#" id="iphonex" onclick="return false">iPhone X</a></li>
+								<li><a href="#" id="iphonese" onclick="return false">iPhone SE</a></li>
+								<li><a href="#" id="iphonexr" onclick="return false">iPhone XR</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="watch-list" onclick="return false">Watch</a>
+							<ul class="watch-list-show">
+								<li><a href="#" id="aw5" onclick="return false">Apple Watch Series 5</a></li>
+								<li><a href="#" id="aw3" onclick="return false">Apple Watch Series 3</a></li>
+								<li><a href="#" id="aws" onclick="return false">Apple Watch Studio</a></li>
+								<li><a href="#" id="awn" onclick="return false">Apple Watch Nike</a></li>
+								<li><a href="#" id="awh" onclick="return false">Apple Watch Hermes</a></li>
+								<li><a href="#" id="awe" onclick="return false">Apple Watch Edition</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="tv-list" onclick="return false">TV</a>
+							<ul class="tv-list-show">
+								<li><a href="#" id="tvplus" onclick="return false">Apple TV+</a></li>
+								<li><a href="#" id="tvapp" onclick="return false">Apple TV app</a></li>
+								<li><a href="#" id="tv4k" onclick="return false">Apple TV 4K</a></li>
+								<li><a href="#" id="tvhd" onclick="return false">Apple TV HD</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<div class="content_description">
+					<div class="content">
+						<div class="product-item">
+						  	<img src="https://html5book.ru/wp-content/uploads/2015/10/black-dress.jpg">
+						  	<div class="product-list">
+						    	<h3>Маленькое черное платье</h3>
+						      	<span class="price">₽ 1999</span>
+						      	<a href="" class="button">В корзину</a>
+						  	</div>
+						</div>
+						<div class="product-item">
+						  	<img src="https://html5book.ru/wp-content/uploads/2015/10/black-dress.jpg">
+						  	<div class="product-list">
+						    	<h3>Маленькое черное платье</h3>
+						      	<span class="price">₽ 1999</span>
+						      	<a href="" class="button">В корзину</a>
+						  	</div>
+						</div>
+						<div class="product-item">
+						  	<img src="https://html5book.ru/wp-content/uploads/2015/10/black-dress.jpg">
+						  	<div class="product-list">
+						    	<h3>Маленькое черное платье</h3>
+						      	<span class="price">₽ 1999</span>
+						      	<a href="" class="button">В корзину</a>
+						  	</div>
+						</div>
+						<div class="product-item">
+						  	<img src="https://html5book.ru/wp-content/uploads/2015/10/black-dress.jpg">
+						  	<div class="product-list">
+						    	<h3>Маленькое черное платье</h3>
+						      	<span class="price">₽ 1999</span>
+						      	<a href="" class="button">В корзину</a>
+						  	</div>
+						</div>
+					</div>
+					<div class="grey_line"></div>
+					<div class="description">
+						<div class="description-container">
+							<div class="description-container-left">
+								<p> Trade‑in values vary. iPhone 11 and iPhone 11 Pro promotional pricing is after trade‑in of iPhone 8 Plus and iPhone X in good condition. iPhone SE promotional pricing is after trade-in of iPhone 8 in good condition. Additional trade‑in values require purchase of a new iPhone, subject to availability and limits. Must be at least 18. Apple or its trade-in partners reserve the right to refuse or limit any Trade In transaction for any reason. In‑store trade‑in requires presentation of a valid, government-issued photo ID (local law may require saving this information). Sales tax may be assessed on full value of new iPhone. Additional terms from Apple or Apple’s trade-in partners may apply. Monthly pricing: Available to qualified customers and requires 0% APR, 24-month installment loan with Citizens One or Apple Card Monthly Installments and iPhone activation with AT&T, Sprint, T-Mobile, or Verizon. Taxes and shipping not included. Additional Apple Card Monthly Installments terms are in the Customer Agreement.</p>
+							</div>
+							<div class="description-container-right">
+								<p>Apple Watch Series 5 promotional pricing is after trade‑in of Apple Watch Series 4 in good condition. Additional trade‑in values require purchase of a new Apple Watch, subject to availability and limits. Must be at least 18. Apple or its trade-in partners reserve the right to refuse or limit any Trade In transaction for any reason. In‑store trade‑in requires presentation of a valid, government-issued photo ID (local law may require saving this information). Sales tax may be assessed on full value of new Apple Watch. Additional terms from Apple or Apple’s trade-in partners may apply. Offer is available for a limited time only.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="footer">
+				<div class="main-content">
+					<div class="left box">
+						<h2>About us</h2>
+						<div class="bottomcontent">
+							<p>Apple Inc. is an American multinational technology company headquartered in Cupertino, California, that designs, develops, and sells consumer electronics, computer software, and online services. </p>
+							<div class="social">
+								<a href="#"><span class="fab fa-facebook-f"></span></a>
+								<a href="#"><span class="fab fa-twitter"></span></a>
+								<a href="#"><span class="fab fa-instagram"></span></a>
+								<a href="#"><span class="fab fa-youtube"></span></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="center box">
+						<h2>Address</h2>
+						<div class="bottomcontent">
+							<div class="place">
+								<span class="fas fa-map-marker-alt"></span>
+								<span class="text">Kiev, Ukraine</span>
+							</div>
+							<div class="phone">
+								<span class="fas fa-phone-alt"></span>
+								<span class="text">+38 (099) 674-23-99</span>
+							</div>
+							<div class="email">
+								<span class="fas fa-envelope"></span>
+								<span class="text">dsfomin2@gmail.com</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="right box">
+						<h2>Contact us</h2>
+						<div class="bottomcontent">
+							<form action="#">
+								<div class="email">
+									<div class="text">Email *</div>
+									<input type="email" required>
+								</div>
+								<div class="msg">
+									<div class="text">Message *</div>
+									<textarea cols="25" rows="2" required></textarea>
+								</div>
+								<div class="btn">
+									<button type="submit">Send</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom">
+			<center>
+				<span class="credit">Created By <a href="#">Fomin Dmitriy</a> | </span>
+				<span class="far fa-copyright"></span>
+				<span>2020 All rights reserved.</span>
+			</center>
+		</div>
+	</footer>
+	<script type="text/javascript" src="scripts/slider.js"></script>  
+	<script type="text/javascript" src="scripts/navigation.js"></script>
+	<script type="text/javascript" src="scripts/recall.js"></script>
+</body>
+</html>

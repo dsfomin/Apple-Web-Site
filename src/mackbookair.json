@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Macbook Air 2015",
+    "price": 50,
+    "description": "Cool Macbook"
+  },
+  {
+    "name": "Macbook Air 2016",
+    "price": 70,
+    "description": "Cool Macbook"
+  },
+  {
+    "name": "Macbook Air 2017",
+    "price": 45,
+    "description": "Cool Macbook"
+  },
+  {
+    "name": "Macbook Air 2018",
+    "price": 80,
+    "description": "Cool Macbook"
+  },
+  {
+    "name": "Macbook Air 2019",
+    "price": 87,
+    "description": "Cool Macbook"
+  },
+  {
+    "name": "Macbook Air 2020",
+    "price": 100,
+    "description": "Cool Macbook"
+  }
+]
