@@ -165,6 +165,7 @@ header {
 .company-info {
 	font-size: 14px;
 	line-height: 34px;
+	font-weight: 600;
 }
 
 #top-phone-container {
@@ -273,14 +274,14 @@ nav > li:last-child {
 }
 
 .navigation ul li a {
-	color: #1a1a1a;
+	color: #595959;
 	display: block;
 	text-decoration: none;
 	font-weight: 600;
 } 
 
 .navigation ul li a:hover {
-	color: black;
+	color: #262626;
 	display: block;
 	text-decoration: none;
 } 
@@ -337,6 +338,8 @@ nav > li:last-child {
   font-family: "Open Sans";
   transition: .3s ease-in;
   margin-bottom: 10px;
+  padding-bottom: 2px;
+  margin-right: 2px;
 }
 .product-item:hover {border-bottom: 2px solid #fc5a5a;}
 .product-item img {
@@ -408,7 +411,7 @@ footer {
   	position: relative;
   	width: 100%;
   	background: #111;
-  	color: white;
+  	color: #f2f2f2;
 }
 
 .main-content {
