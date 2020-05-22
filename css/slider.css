@@ -1,7 +1,7 @@
 .slideshow-container {
-  max-width: 1200px;
+  max-width: 954px;
   position: relative;
-  margin: 30px auto;
+  margin: 50px auto;
 }
 
 .slides {
@@ -27,11 +27,6 @@
 
 .next {
   right: 0;
-  margin-right: 20px;
-}
-
-.prev {
-  margin-left: 20px;
 }
 
 .prev:hover, .next:hover {
@@ -52,7 +47,7 @@
 
 .dots-container {
   text-align: center;
-  margin-bottom: 10px;
+  margin: 15px 0;
 }
 
 .fade {
@@ -87,7 +82,7 @@
   background: #333;
 }
 
-@media (max-width:1400px) {
+@media (max-width:1200px) {
    .slideshow-container {
        display:none;
    }
