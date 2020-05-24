@@ -86,4 +86,7 @@
    .slideshow-container {
        display:none;
    }
+   .content_description .grey_line {
+    display: none;
+   }
 }

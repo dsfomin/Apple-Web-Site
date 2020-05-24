@@ -16,22 +16,24 @@
 		<div id="recall-popup">
 			<a href="#" class="close"></a>
 			<h1>FEEDBACK</h1>
-			<label>Your Name *</label>
-			<input type="text" name="name" value="">
-			<label>Phone Number *</label>
-			<input type="tel" name="tel" value="">
-			<label>Email *</label>
-			<input type="Email" name="email" value="">
-			<label>Message</label>
-			<textarea rows="5" id="txt" name="textarea" placeholder="Enter your message ..." style="color: black"></textarea>
-			<button>Send</button>
+			<form action="#">
+				<label>Your Name *</label>
+				<input type="text" name="name" value="" required>
+				<label>Phone Number *</label>
+				<input type="tel" name="tel" value="" required>
+				<label>Email *</label>
+				<input type="Email" name="email" value="" required>
+				<label>Message</label>
+				<textarea rows="5" id="txt" name="textarea" placeholder="Enter your message ..." style="color: black"></textarea>
+				<button>Send</button>
+			</form>
 		</div>
 	</div>
 	<header>
 		<div class="container">
 			<div class="top-container">
 				<div class="logo">
-					<img src="images/logo.png" alt="" width="125px">
+					<img src="images/logo.png" alt="Apple" width="125px">
 				</div>
 				<div id="top-logo-container">
 					<p class="company-name">Apple</p>
@@ -84,6 +86,10 @@
 	</section>
 	<section>
 		<div class="container">
+			<div class="path" id="path">
+				<span>Home Page</span>
+				<span> / Catalog</span>
+			</div>
 			<div class="catalog">
 				<nav class="navigation">
 					<ul>
@@ -116,7 +122,7 @@
 							</ul>
 						</li>
 						<li>
-							<a href="#" class="watch-list" onclick="return false">Watch</a>
+							<a href="#" class="watch-list" onclick="return false">Apple Watch</a>
 							<ul class="watch-list-show">
 								<li><a href="#" id="aw5" onclick="return false">Apple Watch Series 5</a></li>
 								<li><a href="#" id="aw3" onclick="return false">Apple Watch Series 3</a></li>
@@ -137,10 +143,13 @@
 						</li>
 					</ul>
 				</nav>
-				<div class="content_description">
+				<div class="content_description" id="content_description">
 					<div class="content" id="content">
 						
 					</div>
+					<center class="num" id="center">
+						
+					</center>
 					<div class="grey_line"></div>
 					<div class="description">
 						<div class="description-container">
